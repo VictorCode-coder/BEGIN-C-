@@ -1,0 +1,8 @@
+C:\Users\João Victor\Documents\MeusProjetos\My First Project in C# - Hello World\My First Project in C# - Hello World\bin\Debug\My First Project in C# - Hello World.exe.config
+C:\Users\João Victor\Documents\MeusProjetos\My First Project in C# - Hello World\My First Project in C# - Hello World\bin\Debug\My First Project in C# - Hello World.exe
+C:\Users\João Victor\Documents\MeusProjetos\My First Project in C# - Hello World\My First Project in C# - Hello World\bin\Debug\My First Project in C# - Hello World.pdb
+C:\Users\João Victor\Documents\MeusProjetos\My First Project in C# - Hello World\My First Project in C# - Hello World\obj\Debug\My First Project in C# - Hello World.csproj.AssemblyReference.cache
+C:\Users\João Victor\Documents\MeusProjetos\My First Project in C# - Hello World\My First Project in C# - Hello World\obj\Debug\My First Project in C# - Hello World.csproj.SuggestedBindingRedirects.cache
+C:\Users\João Victor\Documents\MeusProjetos\My First Project in C# - Hello World\My First Project in C# - Hello World\obj\Debug\My First Project in C# - Hello World.csproj.CoreCompileInputs.cache
+C:\Users\João Victor\Documents\MeusProjetos\My First Project in C# - Hello World\My First Project in C# - Hello World\obj\Debug\My First Project in C# - Hello World.exe
+C:\Users\João Victor\Documents\MeusProjetos\My First Project in C# - Hello World\My First Project in C# - Hello World\obj\Debug\My First Project in C# - Hello World.pdb
