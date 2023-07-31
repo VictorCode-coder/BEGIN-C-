@@ -10,10 +10,14 @@ namespace My_First_Project_in_C____Hello_World
     {
         static void Main(string[] args)
         {
+            //\n ou Console.WriteLine pula uma linha
+            //Console.Write escreve na tela
+            Console.WriteLine("Hello World!");
+            Console.WriteLine("Meu nome é João Victor!");
 
-            Console.Write("Hello World!");
+            //Console.ReadLine ele espera que o user digite algo ou clique em enter para continuar.
             Console.ReadLine();
 
         }
     }
-}
+}   

@@ -1,7 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\My First Project in C# - Hello World",
+    "\\My First Project in C# - Hello World\\My First Project in C# - Hello World"
   ],
-  "SelectedNode": "\\C:\\Users\\João Victor\\Source\\Repos\\BEGIN-C-",
+  "SelectedNode": "\\My First Project in C# - Hello World\\My First Project in C# - Hello World\\Program.cs",
   "PreviewInSolutionExplorer": false
 }
