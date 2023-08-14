@@ -10,25 +10,26 @@ namespace Inicio_da_entrada_de_dados_no_C_Sharp
     {
         static void Main(string[] args)
         {
-            int N1 = 5 + 5;
-            int N2 = 5 - 5;
-            int N3 = 5 * 5;
-            int N4 = 5 / 5;
+            
+            
+            Console.WriteLine("Digite o 1º Número:");
+            int N1 = Int32.Parse(Console.ReadLine());
+            Console.WriteLine("Digite o 2º Número:");
+            int N2 = Int32.Parse(Console.ReadLine());
+            if ((N1 * N2) > (N1 + N2))
+            {
+                Console.WriteLine("A multiplicação é maior que a soma!");
+            }
+            else if ((N1 * N2) == (N1 + N2))
+            {
+                Console.WriteLine("A multiplicação e a soma são iguai!");
 
-            Console.WriteLine("A +, -, *, / entre os números 5 e 5 é : ");
-            Console.WriteLine(N1);
-            Console.WriteLine(N2);
-            Console.WriteLine(N3);
-            Console.WriteLine(N4);
+            }
+            else
+            {
+                Console.WriteLine("A soma é maior que a multilplicação!");
 
-
-
-
-
-
-
-
-
+            }
 
 
 
