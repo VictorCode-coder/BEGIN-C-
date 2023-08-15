@@ -10,29 +10,38 @@ namespace Inicio_da_entrada_de_dados_no_C_Sharp
     {
         static void Main(string[] args)
         {
-            
-            
-            Console.WriteLine("Digite o 1º Número:");
-            int N1 = Int32.Parse(Console.ReadLine());
-            Console.WriteLine("Digite o 2º Número:");
-            int N2 = Int32.Parse(Console.ReadLine());
-            if ((N1 * N2) > (N1 + N2))
+          
+            Console.WriteLine("------------------------------------");
+            Console.WriteLine("         Analisador de idade");
+            Console.WriteLine("------------------------------------");
+            Console.WriteLine("Digite o ano atual:");
+            int anoatual = Int32.Parse(Console.ReadLine());
+            Console.WriteLine("Digite o ano em que você nasceu :");
+            int nascimento = Int32.Parse(Console.ReadLine());
+            int id= anoatual - nascimento;
+            Console.WriteLine("Sua idade é!");
+            Console.WriteLine(id);
+            if (id < 10)
             {
-                Console.WriteLine("A multiplicação é maior que a soma!");
+                Console.WriteLine("Você é uma criança, não pode dirigir!");
             }
-            else if ((N1 * N2) == (N1 + N2))
+            else if (id > 10 && id < 18)
             {
-                Console.WriteLine("A multiplicação e a soma são iguai!");
-
+                Console.WriteLine("Você é um adolescente, não pode dirigir!");
             }
-            else
+            else if (id >= 18 && id <= 25)
             {
-                Console.WriteLine("A soma é maior que a multilplicação!");
-
+                Console.WriteLine("Você já é maior de idade, pode ditigir!");
             }
-
-
-
+            else if (id > 25 && id < 60)
+            {
+                Console.WriteLine("Você já é um adulto e pode dirigir!");
+            }
+            else if (id >= 60)   
+            {
+                Console.WriteLine("Você já é idoso, precisa descansar!");
+            }
+    
             Console.ReadLine();
         }
     }
