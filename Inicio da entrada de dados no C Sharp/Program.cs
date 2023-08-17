@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Diagnostics.Eventing.Reader;
 using System.Linq;
+using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -11,52 +12,43 @@ namespace Inicio_da_entrada_de_dados_no_C_Sharp
     {
         static void Main(string[] args)
         {
-          
-            Console.WriteLine("------------------------------------");
-            Console.WriteLine("         Analisador de idade");
-            Console.WriteLine("------------------------------------");
-            ano();
+            string nomeproduto = "";
+            float precofornecedor = 0; 
+            float precocusto = 0;
+            float lucrodesejado = 0;
+
+
+
+            Console.WriteLine("-------------------------");
+            Console.WriteLine("   Gestão de Produtos");
+            Console.WriteLine("-------------------------");
+
+            Console.WriteLine("    Dados do Produto:");
+            Console.WriteLine("-------------------------");
+            Console.WriteLine("NOME DO PRODUTO :");
+            nomeproduto = Console.ReadLine();
+            Console.WriteLine("PREÇO DE FORNECEDOR :");
+            precofornecedor = float.Parse(Console.ReadLine());
+            Console.WriteLine("PREÇO DE CUSTO :");
+            precocusto = float.Parse(Console.ReadLine());
+            Console.WriteLine("LUCRO DESEJADO(%) :");
+            lucrodesejado = float.Parse(Console.ReadLine());
+            precodoproduto(precocusto,lucrodesejado);
+
+
 
 
             Console.ReadLine();
-      
         }
-        static void ano()
+        static void precodoproduto(float preco, float lucro)
         {
-            Console.WriteLine("Digite o ano atual:");
-            int anoatual = int.Parse(Console.ReadLine());
-            Console.WriteLine("Digite o ano em que você nasceu :");
-            int nascimento = int.Parse(Console.ReadLine());
-            idade(anoatual, nascimento);
-            
+            float novopreco = ((preco * lucro) / 100) + preco;
+            Console.WriteLine("---------------------------------------");
+            Console.WriteLine("NOVO PREÇO DO PRODUTO : R$" + novopreco);
+            Console.WriteLine("---------------------------------------");
         }
 
-        static void idade(int cal_id1, int cal_id2)
-        {
-            int ID = cal_id1 - cal_id2;
-            Console.WriteLine("Sua idade é:");
-            Console.WriteLine(ID);
-            fasevida(ID);
-        }
-        static void fasevida(int fasevida)
-        {
-            if (fasevida == 0)
-            {
-                Console.WriteLine("VOCÊ AINDA NÃO NASCEU!");
-            }
-            else if (fasevida > 0 && fasevida < 10)
-            {
-                Console.Write("Você é uma criança");
-            }
-            else if (fasevida > 10 && fasevida < 20)
-            {
-                Console.WriteLine("Você é um adolescente");
-            }
-            else if (fasevida >= 20)
-            {
-                Console.WriteLine("Você é um adulto");
-            }
-        }
+
 
     }   
 }
