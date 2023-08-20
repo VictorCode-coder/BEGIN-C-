@@ -13,6 +13,8 @@ namespace Inicio_da_entrada_de_dados_no_C_Sharp
         static void Main(string[] args)
         {
             string nomeproduto = "";
+            string categoria = "";
+            string unidade = "";
             float precofornecedor = 0; 
             float precocusto = 0;
             float lucrodesejado = 0;
@@ -27,26 +29,33 @@ namespace Inicio_da_entrada_de_dados_no_C_Sharp
             Console.WriteLine("-------------------------");
             Console.WriteLine("NOME DO PRODUTO :");
             nomeproduto = Console.ReadLine();
+            Console.WriteLine("CATEGORIA DO PRODUTO :");
+            categoria = Console.ReadLine();
+            Console.WriteLine("UNIDADE DE MEDIDA DO PRODUTO :");
+            unidade = Console.ReadLine();
             Console.WriteLine("PREÇO DE FORNECEDOR :");
             precofornecedor = float.Parse(Console.ReadLine());
             Console.WriteLine("PREÇO DE CUSTO :");
             precocusto = float.Parse(Console.ReadLine());
             Console.WriteLine("LUCRO DESEJADO(%) :");
             lucrodesejado = float.Parse(Console.ReadLine());
-            precodoproduto(precocusto,lucrodesejado);
+            Console.Clear();
+
+            precodoproduto(precocusto,lucrodesejado,nomeproduto,categoria,unidade);
 
 
 
 
             Console.ReadLine();
         }
-        static void precodoproduto(float preco, float lucro)
+        static void precodoproduto(float preco, float lucro, string nome, string cat, string un)
         {
             float novopreco = ((preco * lucro) / 100) + preco;
-            Console.WriteLine("---------------------------------------");
-            Console.WriteLine("NOVO PREÇO DO PRODUTO : R$" + novopreco);
-            Console.WriteLine("---------------------------------------");
-        }
+            Console.WriteLine("--------------------------------------");
+            Console.WriteLine("NOME DO PRODUTO-----" + nome);
+            Console.WriteLine("CATEGORIA ---------------------" + cat);
+            Console.WriteLine("UNIDADE DE MEDIDA--------------" + un);
+        }   
 
 
 
