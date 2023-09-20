@@ -1,8 +1,0 @@
-C:\Users\João Victor\source\repos\BEGIN-C-\Inicio da entrada de dados no C Sharp\obj\Debug\Inicio da entrada de dados no C Sharp.csproj.AssemblyReference.cache
-C:\Users\João Victor\source\repos\BEGIN-C-\Inicio da entrada de dados no C Sharp\obj\Debug\Inicio da entrada de dados no C Sharp.csproj.SuggestedBindingRedirects.cache
-C:\Users\João Victor\source\repos\BEGIN-C-\Inicio da entrada de dados no C Sharp\obj\Debug\Inicio da entrada de dados no C Sharp.csproj.CoreCompileInputs.cache
-C:\Users\João Victor\source\repos\BEGIN-C-\Inicio da entrada de dados no C Sharp\bin\Debug\Inicio da entrada de dados no C Sharp.exe.config
-C:\Users\João Victor\source\repos\BEGIN-C-\Inicio da entrada de dados no C Sharp\bin\Debug\Inicio da entrada de dados no C Sharp.exe
-C:\Users\João Victor\source\repos\BEGIN-C-\Inicio da entrada de dados no C Sharp\bin\Debug\Inicio da entrada de dados no C Sharp.pdb
-C:\Users\João Victor\source\repos\BEGIN-C-\Inicio da entrada de dados no C Sharp\obj\Debug\Inicio da entrada de dados no C Sharp.exe
-C:\Users\João Victor\source\repos\BEGIN-C-\Inicio da entrada de dados no C Sharp\obj\Debug\Inicio da entrada de dados no C Sharp.pdb
