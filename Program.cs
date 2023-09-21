@@ -16,7 +16,7 @@ namespace Exercícios_de_Lógica_em_CSharp
             float resultsoma = 0.0f;
             float resultsub = 0.0f;
             float resultmulti = 0.0f;
-
+             
 
             Console.WriteLine("--------------------------------------------------");
             Console.WriteLine("CALCULADORA - INCIANTES EM CSharp");
