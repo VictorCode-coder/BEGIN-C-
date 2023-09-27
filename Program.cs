@@ -29,6 +29,8 @@ namespace Exercícios_de_Lógica_em_CSharp
             Console.WriteLine("[2] - Subtrair");
             Console.WriteLine("[3] - Multiplicador");
             Console.WriteLine("[4] - Dividir");
+            Console.WriteLine("[5] - Resto da Divisão");
+            Console.WriteLine("[6] - Potência");
             Console.WriteLine("[0] - Sair");
             menuopcoes = Console.ReadLine();
             Console.Clear();
@@ -51,6 +53,14 @@ namespace Exercícios_de_Lógica_em_CSharp
                     Divisao();
                     break;
 
+                case "5":
+                    Resto();
+                    break;
+
+                case "6":
+                    Potencia();
+                    break;
+
                 default:
                     Console.WriteLine("FECHANDO O PROGRAMA...ADEUS (; ;)");
                     Console.ReadLine();
@@ -67,8 +77,8 @@ namespace Exercícios_de_Lógica_em_CSharp
             float numero1 = int.Parse(Console.ReadLine());
             Console.WriteLine("DIGITE 0 2º NÚMERO :");
             float numero2 = int.Parse(Console.ReadLine());
-            float results = numero1 + numero2;
-            Console.WriteLine(numero1 + " + " + numero2 + " = " + results);
+            float result = numero1 + numero2;
+            Console.WriteLine(numero1 + " + " + numero2 + " = " + result);
             Console.ReadLine();
             Console.Clear();
             Menu();
@@ -79,8 +89,8 @@ namespace Exercícios_de_Lógica_em_CSharp
             float numero1 = int.Parse(Console.ReadLine());
             Console.WriteLine("DIGITE 0 2º NÚMERO :");
             float numero2 = int.Parse(Console.ReadLine());
-            float results = numero1 - numero2;
-            Console.WriteLine(numero1 + " - " + numero2 + " = " + results);
+            float result = numero1 - numero2;
+            Console.WriteLine(numero1 + " - " + numero2 + " = " + result);
             Console.ReadLine();
             Console.Clear();
             Menu();
@@ -92,8 +102,8 @@ namespace Exercícios_de_Lógica_em_CSharp
             float numero1 = int.Parse(Console.ReadLine());
             Console.WriteLine("DIGITE 0 2º NÚMERO :");
             float numero2 = int.Parse(Console.ReadLine());
-            float results = numero1 * numero2;
-            Console.WriteLine(numero1 + " x " + numero2 + " = " + results);
+            float result = numero1 * numero2;
+            Console.WriteLine(numero1 + " x " + numero2 + " = " + result);
             Console.ReadLine();
             Console.Clear();
             Menu();
@@ -114,20 +124,56 @@ namespace Exercícios_de_Lógica_em_CSharp
             }
             else
             { 
-                float results = numero1 / numero2;
-                Console.WriteLine(numero1 + " / " + numero2 + " = " + results);
+                float result = numero1 / numero2;
+                Console.WriteLine(numero1 + " / " + numero2 + " = " + result);
                 Console.ReadLine();
                 Console.Clear();
                 Menu();
             }
         }
 
+        static void Resto()
+        {
+            Console.WriteLine("DIGITE O 1º NÚMERO :");
+            float numero1 = int.Parse(Console.ReadLine());
+            Console.WriteLine("DIGITE 0 2º NÚMERO :");
+            float numero2 = int.Parse(Console.ReadLine());
+            if (numero2 == 0)
+            {
+                Console.WriteLine("NÃO É POSSÍVEL DIVIDIR POR ZERO");
+                Console.ReadLine();
+                Console.Clear();
+                Divisao();
+            }
+            else
+            {
+                float result = numero1 % numero2;
+                Console.WriteLine("O RESTO DE " + numero1 + " / " + numero2 + " é : " + result);
+                Console.ReadLine();
+                Console.Clear();
+                Menu();
+            }
+        }
+
+        static void Potencia()
+        {
+            double basep, expo;
+            Console.WriteLine("DIGITE A BASE :");
+            basep = double.Parse(Console.ReadLine());
+            Console.WriteLine("DIGITE 0 EXPOENTE :");
+            expo = double.Parse(Console.ReadLine());
+            Console.WriteLine($"{basep} elevado a {expo} = {Math.Pow(basep, expo)}" );
+            Console.ReadLine();
+            Console.Clear();
+            Menu();
+        }
+
 
 
         //CRIAR UMA FUNÇÃO PARA CADA OPERAÇÃO. EM QUE NO FINAL ELA VAI CHAMAR A FUNÇÃO DO MENU NOVAMENTE
         //// Desafios
-        // 1- Crie uma nova opção na calculadora (opção número 5 do menu) que retorne o resto da divisão.
-        // 2- Crie uma nova opção na calculadora (opção número 6 do menu) que retorne o resultado da potenciação de uma determinada base pelo seu expoente. Exemplo **2³ = 8**.
+        // 1- Crie uma nova opção na calculadora (opção número 5 do menu) que retorne o resto da divisão.(CONCLUÍDO)
+        // 2- Crie uma nova opção na calculadora (opção número 6 do menu) que retorne o resultado da potenciação de uma determinada base pelo seu expoente. Exemplo **2³ = 8**.(CONCLUÍDO)
     }
 
 
